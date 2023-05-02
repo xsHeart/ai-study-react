@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { TodoItem } from '../../components/TodoItem/TodoItem'
 
 export const IssueManagement = () => {
   const [issueList, setIssueList] = useState([
@@ -18,9 +19,7 @@ export const IssueManagement = () => {
       {
         issueList.map(item => {
           return (
-            <div key={ item.id }>
-              <input type="checkbox" checked={ item.state || false } onChange={ event => onChange(event, item) } />{ item.name }
-            </div>
+            <TodoItem key={ item.id } item={ item } onChange={ onChange } />
           )
         })
       }
