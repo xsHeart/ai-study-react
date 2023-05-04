@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 export const CountDown = ({ t = 10 }) => {
   const [times] = useState(t)
   return (
-    <div>{ times }</div>
+    <div>
+      <button>+</button>
+      { times }
+      <button>-</button>
+    </div>
   )
 }
 
