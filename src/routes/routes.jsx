@@ -4,7 +4,7 @@ import { ErrorPage } from '../pages/ErrorPage'
 import { Home } from '../pages/Task2/Home/Home'
 import { Abuto } from '../pages/Task2/Abuto/Abuto'
 
-import { App } from '../pages/Task3/App/App'
+import { Count } from '../pages/Task3/Count/Count'
 
 export const router = createBrowserRouter([
   {
@@ -17,12 +17,12 @@ export const router = createBrowserRouter([
       { path: 'abuto', element: <Abuto /> }
     ]
   }, {
-    path: '/app',
-    element: <App />,
+    path: '/task3',
+    element: <Count />,
     errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <App /> },
-      { path: 'app', element: <App /> }
+      { index: true, element: <Count /> },
+      { path: 'task3', element: <Count /> }
     ]
   }
 ])

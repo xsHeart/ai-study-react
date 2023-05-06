@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
 import { router } from './routes/routes'
+
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import { todoApp } from './store'
+import counterReducer from './store'
 
-let store = createStore(todoApp)
+let store = createStore(counterReducer)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
