@@ -6,6 +6,8 @@ import { Abuto } from '../pages/Task2/Abuto/Abuto'
 
 import { Count } from '../pages/Task3/Count/Count'
 
+import { Calculator } from '../pages/Task4/Calculator/Calculator'
+
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Count /> },
       { path: 'task3', element: <Count /> }
+    ]
+  }, {
+    path: '/task4',
+    element: <Calculator />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Calculator /> },
+      { path: 'task4', element: <Calculator /> }
     ]
   }
 ])

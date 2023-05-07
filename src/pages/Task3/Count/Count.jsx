@@ -6,7 +6,7 @@ export const Count = () => {
   const count = useSelector(state => state.count)
 
   return <>
-    <div>count</div>
+    <div className='bg-gray-100'>count</div>
     <div>{ count }</div>
     <button onClick={() => dispatch(increment(10))}>+</button>
     <button onClick={() => dispatch(decrement(10))}>-</button>

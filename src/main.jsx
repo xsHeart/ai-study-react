@@ -7,6 +7,8 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import counterReducer from './store'
 
+import 'virtual:uno.css'
+
 let store = createStore(counterReducer)
 
 ReactDOM.createRoot(document.getElementById('root')).render(

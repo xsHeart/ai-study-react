@@ -1,9 +1,11 @@
+import { INCREMENT, DECREMENT } from '../constants/constants'
+
 export const increment = (amount) => ({
-  type: 'increment',
+  type: INCREMENT,
   payload: amount
 });
 
 export const decrement = (amount) => ({
-  type: 'decrement',
+  type: DECREMENT,
   payload: amount
 });
